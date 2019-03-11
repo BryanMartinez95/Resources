@@ -1,3 +1,33 @@
+.blue {
+  background-color: #217B90;
+}
+.grey {
+  background-color: #ccc;
+}
+.lightgrey {
+  background-color: #EAEAEA;
+}
+.darkgrey {
+  background-color: #545454;
+}
+.darkorange {
+  background-color: #EB5A4B;
+}
+.lightblue {
+  background-color: #848484;
+}
+.black {
+  background-color: #333;
+}
+.black2 {
+  background-color: #252525;
+}
+.white {
+  background-color: #f7f7f7;
+}
+.orange {
+  background-color: #f96e5b;
+}
 body,
 h1,
 h2,
@@ -7,8 +37,12 @@ a {
   font-family: 'Roboto', sans-serif !important;
   line-height: 2em;
 }
+html {
+  height: 100%;
+}
 body {
   min-height: 100%;
+  background-color: #f7f7f7;
 }
 /* Code blocks */
 code {
@@ -24,7 +58,7 @@ code {
 }
 .page-flex-container {
   padding: 50px 50px 0px 50px;
-  background-color: #FFFFFF;
+  background-color: #ccc;
   border-radius: 5px;
   margin: 0 auto;
   margin-top: 2px;
@@ -32,6 +66,9 @@ code {
   max-width: 60em;
   word-break: normal !important;
   word-wrap: break-word;
+}
+.flex-item {
+  padding: 0 10px 0 10px;
 }
 .centerContent {
   margin: 0 auto;
@@ -69,6 +106,7 @@ code {
 .picture-project {
   max-width: 80%;
 }
+/*Testing a background video*/
 .card-container {
   display: flex;
   flex-wrap: wrap;
@@ -81,7 +119,6 @@ code {
   margin: 5px;
   display: flex;
   flex-direction: column;
-  background-color: #CCCCCC;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   min-height: 350px;
   width: 400px;
@@ -139,7 +176,6 @@ code {
 }
 .navbar-flex-group {
   display: flex;
-  background-color: #545454;
   border-bottom-right-radius: 5px;
   line-height: normal !important;
   flex-grow: 1;
@@ -149,25 +185,19 @@ code {
   display: inline-flex;
   align-self: flex-end;
   margin-left: auto;
+  margin-right: auto;
 }
+/* Padding between items */
 .nav-list > li {
   padding: 0px 25px;
 }
-.nav-list > li > a:hover {
-  color: #040303 !important;
-  border-left: 2.5px solid;
-  border-right: 2.5px solid;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
 .nav-list > li > a {
   position: relative;
-  border-left: 2.5px solid #545454;
-  border-right: 2.5px solid #545454;
   padding-right: 5px;
   padding-left: 5px;
   display: inline-block;
   line-height: normal !important;
-  color: #FFFFFF !important;
+  color: #040303 !important;
   font-size: 130%;
   transition: all 0.3s ease-in-out;
   text-decoration: none;
@@ -197,27 +227,11 @@ code {
   transition: all 0.3s ease-out;
   color: #23527c !important;
 }
-.nav-list > li > a::after {
-  content: '';
-  width: 0;
-  height: 2px;
-  background: #040303;
-  position: absolute;
-  top: 0;
-  right: 0;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-  color: #23527c !important;
-}
 .nav-list > li > a:hover::after {
   width: 100%;
 }
 .nav-list > li > a:hover::before {
   width: 100%;
-}
-.orange-header {
-  color: #545454;
-  background-color: #545454;
 }
 .profilepic {
   border-radius: 50%;
@@ -247,7 +261,7 @@ code {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 10px;
-    color: #FFFFFF;
+    color: #ccc;
   }
 }
 .fill {
@@ -280,16 +294,16 @@ code {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 1.5em;
-  color: #FFFFFF;
+  color: #EAEAEA;
   display: block;
   transition: 0.3s;
 }
 .mobile-item {
-  border-bottom: 1px solid #FFFFFF;
+  border-bottom: 1px solid #ccc;
 }
 .mobile-item-top {
-  border-top: 1px solid #FFFFFF;
-  border-bottom: 1px solid #FFFFFF;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
 }
 .mobile-item:hover {
   color: #040303 !important;
@@ -329,27 +343,21 @@ code {
     font-size: 18px;
   }
 }
-.header_grid_item {
+.header-grid-item {
   grid-area: header;
 }
-.sidemenu_grid_item {
-  grid-area: sidemenu;
-}
-.main_grid_item {
+.main-grid-item {
   grid-area: main;
 }
-.footer_grid_item {
+.footer-grid-item {
   grid-area: footer;
 }
 .grid-item {
   background-color: #545454;
 }
-.playgrid {
-  height: 100%;
+.grid-container {
   display: grid;
-  background-color: #848484;
-  margin: 100px;
-  grid-gap: 10px;
-  grid-template-areas: "header header" "sidemenu main" "footer footer";
-  padding: 10px;
+  height: 100vh;
+  width: 100%;
+  grid-template-areas: "header header" "main main" "footer footer";
 }
