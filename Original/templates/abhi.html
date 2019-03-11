@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resource Project Page</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/main.css">
+    </link>
+</head>
+
+<body>
+    <div class="body">
+        <header>
+            <nav class="navbar-flex-group">
+                <div class="flex-container">
+                    <a class="flex-item menu" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars fa-2x barsmenu"
+                            aria-hidden="true"></i></a>
+                    <div class="fill"></div>
+                    <!-- <a class="flex-item profile-pic" href="{{ .Site.BaseURL }}/"><img src="http://i.imgur.com/SCxqq90.png" class="profilepic" alt="Profile Picture"></a> -->
+                </div>
+
+                <ul class="flex-container nav-list">
+                    <li class="flex-item"><a class="nav-underline" href="{{ .Site.BaseURL }}/blog">About Us</a></li>
+                    <!--<li class="flex-item"><a class="nav-underline" href="{{ .Site.BaseURL }}/experiment">Program Overview</a></li>-->
+                    <li class="flex-item"><a class="nav-underline" href="{{ .Site.BaseURL }}/project">Upcoming Courses</a></li>
+                    <li class="flex-item"><a class="nav-underline" href="{{ .Site.BaseURL }}/learn">Admissions</a></li>
+                    <li class="flex-item"><a class="nav-underline" href="{{ .Site.BaseURL }}/about">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a class="mobile-item-top" href="{{ .Site.BaseURL }}/blog">Blog</a>
+                <!--<a class="mobile-item" href="{{ .Site.BaseURL }}/experiment">Experiment</a>-->
+                <a class="mobile-item" href="{{ .Site.BaseURL }}/project">Project</a>
+                <a class="mobile-item" href="{{ .Site.BaseURL }}/learn">Learn</a>
+                <a class="mobile-item" href="{{ .Site.BaseURL }}/about">About Me</a>
+            </div>
+        </header>
+        <main>
+            <h1>Header 1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, soluta asperiores esse repudiandae
+                sequi deleniti neque et dignissimos assumenda id corrupti, praesentium enim dolor quasi ad officia quam
+                adipisci vero.</p>
+        </main>
+        <footer>
+            <ul class="footer-icon-list">
+                <li><a class="footer-link" href="https://www.instagram.com/bfmxyz/" target="_blank"><i class="fab fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+                <li><a class="footer-link" href="https://github.com/BryanMartinez95" target="_blank"><i class="fab fa-github fa-2x" aria-hidden="true"></i></a></li>
+                <li><a class="footer-link" href="https://ca.linkedin.com/in/bmartinez95" target="_blank"><i class="fab fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
+            </ul>
+        </footer>
+    </div>
+
+    <!-- <script></script> -->
+</body>
+
+</html>
