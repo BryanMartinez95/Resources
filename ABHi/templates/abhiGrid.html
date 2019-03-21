@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resource Project Page</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/main.css">
+    </link>
+</head>
+
+<body>             
+    <div class="grid-container">
+        <header class="header-grid-item">
+            <div class="flex-container">
+                <div class="flex-item"><i class="fas fa-phone"></i> 403-986-9998</div>
+                <div class="flex-item"><i class="far fa-clock"></i> Monday - Saturday 8:00 - 18:00</div>
+            </div>
+            <nav class="navbar-flex-group">
+                <div class="flex-container">
+                    <a class="flex-item menu" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars fa-2x barsmenu"
+                            aria-hidden="true"></i></a>
+                    <div class="fill"></div>
+                    <a class="flex-item profile-pic" href="{{ .Site.BaseURL }}/"><img src="../images/main_image.jpg" class="profilepic" alt="Profile Picture"></a>
+                </div>
+                <ul class="flex-container nav-list">
+                    <li class="flex-item"><a class="nav-underline" href="{{ .Site.BaseURL }}/blog">About Us</a></li>
+                    <li class="flex-item"><a class="nav-underline" href="{{ .Site.BaseURL }}/project">Program Overview</a></li>
+                    <li class="flex-item"><a class="nav-underline" href="{{ .Site.BaseURL }}/project">Upcoming Courses</a></li>
+                    <li class="flex-item"><a class="nav-underline" href="{{ .Site.BaseURL }}/learn">Admissions</a></li>
+                    <li class="flex-item"><a class="nav-underline" href="{{ .Site.BaseURL }}/about">Contact Us</a></li>
+                </ul>
+            </nav>
+
+
+            <!-- mobile menu -->
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a class="mobile-item-top" href="{{ .Site.BaseURL }}/blog">About Us</a>
+                <a class="mobile-item" href="{{ .Site.BaseURL }}/experiment">Program Overview</a>
+                <a class="mobile-item" href="{{ .Site.BaseURL }}/project">Upcoming Courses</a>
+                <a class="mobile-item" href="{{ .Site.BaseURL }}/learn">Admissions</a>
+                <a class="mobile-item" href="{{ .Site.BaseURL }}/about">Contact Us</a>
+            </div>
+
+        </header>
+        <main class="main-grid-item">
+            <div class="blue"></div>
+            <div class="blue"></div>
+            <div class="black"></div>
+            <div class="black"></div>
+            <div class="black">    <video autoplay muted loop">
+                    <source src="../videos/abhiVideo.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                </video></div>
+            <div class="black"></div>
+            <div class="black"></div>
+            <div class="black"></div>
+            <div class="black"></div>
+            <div class="black"></div>
+            <div class="black"></div>
+            <div class="black"></div>
+            
+        </main>
+        <footer class="footer-grid-item black">
+            <ul class="footer-icon-list">
+                <li><a class="footer-link" href="https://www.instagram.com/bfmxyz/" target="_blank"><i class="fab fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+                <li><a class="footer-link" href="https://github.com/BryanMartinez95" target="_blank"><i class="fab fa-github fa-2x" aria-hidden="true"></i></a></li>
+                <li><a class="footer-link" href="https://ca.linkedin.com/in/bmartinez95" target="_blank"><i class="fab fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
+            </ul>
+        </footer>
+    </div>
+
+    <script>
+    document.getElementsByTagName('video')[0].onended = function () {
+        this.load();
+        this.play();
+    };
+</script>
+</body>
+
+</html>
+
+            

@@ -9,12 +9,21 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/main.css">
-    </link>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
 </head>
 
 <body>
     <div class="body">
-        <header>
+        <header class="header">
             <div class="flex-container">
                 <div class="flex-item"><i class="fas fa-phone"></i> 403-986-9998</div>
                 <div class="flex-item"><i class="far fa-clock"></i> Monday - Saturday 8:00 - 18:00</div>
@@ -24,11 +33,11 @@
                     <a class="flex-item menu" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars fa-2x barsmenu"
                             aria-hidden="true"></i></a>
                     <div class="fill"></div>
-                    <!-- <a class="flex-item profile-pic" href="{{ .Site.BaseURL }}/"><img src="../images/main image.jpg" class="profilepic" alt="Profile Picture"></a> -->
+                    <!-- <a class="flex-item profile-pic" href="{{ .Site.BaseURL }}/"><img src="../images/abhilogo.png" class="profilepic" alt="Profile Picture"></a> -->
                 </div>
                 <ul class="flex-container nav-list">
                     <li class="flex-item"><a class="nav-underline" href="{{ .Site.BaseURL }}/blog">About Us</a></li>
-                    <li class="flex-item"><a class="nav-underline" href="{{ .Site.BaseURL }}/project">Program Overview</a></li>
+                    <li clas s="flex-item"><a class="nav-underline" href="{{ .Site.BaseURL }}/project">Program Overview</a></li>
                     <li class="flex-item"><a class="nav-underline" href="{{ .Site.BaseURL }}/project">Upcoming Courses</a></li>
                     <li class="flex-item"><a class="nav-underline" href="{{ .Site.BaseURL }}/learn">Admissions</a></li>
                     <li class="flex-item"><a class="nav-underline" href="{{ .Site.BaseURL }}/about">Contact Us</a></li>
@@ -47,17 +56,69 @@
             </div>
 
         </header>
-        <main>
-            <video autoplay muted loop class="testVideo">
-                <source src="../videos/abhiVideo.mp4" type="video/mp4">
-                Your browser does not support HTML5 video.
-            </video>
+
+        <main class="page-flex-container">
+            <div class="flex-container">
+                <div class="flex-item">
+
+                    <h1>Alberta Business and Health Institute</h1>
+
+                    <img class="picture" src="../images/abhilogo.png" alt="ABHI">
+
+                    <h1>Alberta Business and Health Institute</h1>
+
+                    <h3>ABHI is an educational institution that aims to produce successful graduates by providing them
+                        with quality education that focuses on practical and critical skills</h3>
+
+                </div>
+                <div class="flex-item">
+                    <div class="container">
+                        <video autoplay muted loop>
+                            <source src="../videos/abhiVideo.mp4" type="video/mp4">
+                            Your browser does not support HTML5 video.
+                        </video>
+                        <div class="centered">
+                            <h2>Let the journey begin</h2>
+                            <button class="btn btn-outline-light">Apply now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="flex-container">
+
+            </div>
+            <!-- <div class="flex-container">
+                    <div class="flex-item">
+                            <video autoplay muted loop >
+                                <source src="../videos/abhiVideo.mp4" type="video/mp4">
+                                Your browser does not support HTML5 video.
+                            </video>
+                        </div>
+                        <!-- <div class="flex-item">
+                            
+                        </div> -->
+            <!-- </div> -->
+            <!-- <div class="flex-item">
+                    <video autoplay muted loop class="testVideo">
+                        <source src="../videos/abhiVideo.mp4" type="video/mp4">
+                        Your browser does not support HTML5 video.
+                    </video>
+                </div> -->
+
+            <!-- </div> -->
+
         </main>
         <footer class="page-footer">
             <ul class="footer-icon-list">
-                <li><a class="footer-link" href="https://www.instagram.com/bfmxyz/" target="_blank"><i class="fab fa-instagram fa-2x" aria-hidden="true"></i></a></li>
-                <li><a class="footer-link" href="https://github.com/BryanMartinez95" target="_blank"><i class="fab fa-github fa-2x" aria-hidden="true"></i></a></li>
-                <li><a class="footer-link" href="https://ca.linkedin.com/in/bmartinez95" target="_blank"><i class="fab fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
+                <li><a class="footer-link" href="https://www.instagram.com/bfmxyz/" target="_blank"><i class="fab fa-instagram fa-2x"
+                            aria-hidden="true"></i></a></li>
+                <li><a class="footer-link" href="https://github.com/BryanMartinez95" target="_blank"><i class="fab fa-github fa-2x"
+                            aria-hidden="true"></i></a></li>
+                <li><a class="footer-link" href="https://ca.linkedin.com/in/bmartinez95" target="_blank"><i class="fab fa-linkedin fa-2x"
+                            aria-hidden="true"></i></a></li>
             </ul>
         </footer>
     </div>

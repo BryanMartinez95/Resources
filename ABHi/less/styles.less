@@ -8,38 +8,60 @@ html {
     height: 100%;
   }
 body{
+    background-image: url("../images/white-waves.png");
     min-height:100%;
-    background-color: @white;
+    // background-color: @white;
+}
+.main{
+    margin: auto;
+     width: 90%;
+    
+    padding: 10px;
 }
 
+.header {
+    border-bottom: 1px solid black;
+}
 /* Code blocks */
 code{
     font-family: monospace !important;
 }
-.flex-container{
+.flex-container {
+    flex-wrap: wrap;
     display:flex;
+    justify-content: center;
+    align-items: center;
 }
+.page-flex-container{
+    // display:flex;'
+padding: 50px 50px 0px 50px;
+background-color: @grey;
+border-radius: 5px;
+// font-size:1.5em;
+margin: 0 auto;
+margin-top: 2px;
+// border:1px solid;
+// box-shadow: 3px 3px 3px #888888;
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+// max-width: 60em;
+    width: 90%;
+word-break:normal !important;
+word-wrap:break-word;
+}
+
+.flex-item{
+    max-width:50em;
+    // max-width: 45%;
+    padding: 0 10px 0 10px;
+    text-align:center;
+}
+
 @media screen and (max-width:780px)
 {
     .flex-container{
         flex-grow:1;
     }
     
-}
-
-.page-flex-container{
-    padding: 50px 50px 0px 50px;
-    background-color: @grey;
-    border-radius: 5px;
-    margin: 0 auto;
-    margin-top: 2px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    max-width: 60em;
-    word-break:normal !important;
-    word-wrap:break-word;
-}
-.flex-item{
-    padding: 0 10px 0 10px;
 }
 .centerContent{
   margin: 0 auto;
@@ -60,13 +82,26 @@ code{
     background: rgba(0,0,0,0.4);
 }
 .picture{
-  max-width:100%;
+  max-width:200px;
 }
 .stop-scrolling {
   height: 100%;
   overflow: hidden;
 }
+video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.width-40{
+    width:100%;
+    padding:40px;
+}
 
+.svg{
+    max-width: 200px;
+
+}
 .text-center{
     text-align: center;
     color:white;
@@ -79,20 +114,63 @@ code{
 .picture-project{
     max-width:80%;
 }
-/*Testing a background video*/
-// .testVideo { 
-//     position: fixed;
-//     top: 50%;
-//     left: 50%;
-//     min-width: 100%;
-//     min-height: 100%;
-//     width: auto;
-//      height: auto;
-//     z-index: -100;
-//     -ms-transform: translateX(-50%) translateY(-50%);
-//     -moz-transform: translateX(-50%) translateY(-50%);
-//     -webkit-transform: translateX(-50%) translateY(-50%);
-//     transform: translateX(-50%) translateY(-50%);
-    
-//     background-size: cover; 
-// }
+
+
+
+
+
+
+
+
+/*video text*/
+/* Container holding the image and the text */
+.container {
+    position: relative;
+    text-align: center;
+    border-radius: 10px; 
+    color: @black;
+  }
+  
+  /* Bottom left text */
+  .bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+  }
+  
+  /* Top left text */
+  .top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+  }
+  
+  /* Top right text */
+  .top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+  }
+  
+  /* Bottom right text */
+  .bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+  }
+  
+  /* Centered text */
+  .centered {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: @white;
+  }
+  .centeredTop {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: @white;
+  }
