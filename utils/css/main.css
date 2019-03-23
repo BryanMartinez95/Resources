@@ -220,7 +220,6 @@ video {
   margin: 5px;
   display: flex;
   flex-direction: column;
-  background-color: #CCCCCC;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   min-height: 350px;
   width: 400px;
