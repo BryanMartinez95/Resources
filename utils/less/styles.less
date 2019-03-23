@@ -7,10 +7,18 @@ body,h1,h2,h3,p,a  {
 html {
     height: 100%;
   }
+// body{
+//     background-image: url("../images/white-waves.png");
+//     min-height:100%;
+//     // background-color: @white;
+// }
+
 body{
-    background-image: url("../images/white-waves.png");
-    min-height:100%;
-    // background-color: @white;
+  min-height:100%;
+  // background-color: @black;
+  background-image: url("../image/trianglify.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .main{
     margin: auto;
@@ -22,6 +30,8 @@ body{
 .header {
     border-bottom: 1px solid black;
 }
+
+
 /* Code blocks */
 code{
     font-family: monospace !important;
@@ -93,11 +103,6 @@ video {
     height: auto;
     border-radius: 10px;
 }
-.width-40{
-    width:100%;
-    padding:40px;
-}
-
 .svg{
     max-width: 200px;
 
@@ -115,7 +120,22 @@ video {
     max-width:80%;
 }
 
+.flex-container-left-profile{
+  flex-wrap: wrap;
+  display:flex;
+  justify-content: left;
+  align-items: center;
 
+
+
+  opacity: 0.85;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  //min-height: 350px;
+  //width: 400px;
+  border-radius: 2px;
+  transition: 0.2s ease-in-out;
+  border: 3px solid black;
+}
 
 
 
