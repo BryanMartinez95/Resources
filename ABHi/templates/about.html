@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resource Project Page</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
+        integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="../../utils/css/normalize.css">
+    </link>
+    <link rel="stylesheet" href="../../utils/css/main.css">
+    </link>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+</head>
+
+<!-- <body> -->
+
+<body class="background-image">
+    <div>
+        <header class="header blue white-text">
+            <!-- <div class="stripes">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div> -->
+            <div class="flex-container">
+                <div class="flex-item"><i class="fas fa-phone"></i> 403-986-9998</div>
+                <div class="flex-item"><i class="far fa-clock"></i> Monday - Saturday 8:00 - 18:00</div>
+            </div>
+            <nav class="navbar-flex-group">
+                <div class="flex-container">
+                    <a class="flex-item menu" href="javascript:void(0);" onclick="openNav()"><i
+                            class="fa fa-bars fa-2x barsmenu" aria-hidden="true"></i></a>
+                    <div class="fill"></div>
+                    <!-- <a class="flex-item profile-pic" href="{{ .Site.BaseURL }}/"><img src="../images/abhilogo.png" class="profilepic" alt="Profile Picture"></a> -->
+                </div>
+                <ul class="flex-container nav-list">
+                    <li class="flex-item"><a class="nav-underline" href="/ABHI/templates/about.html">About Us</a></li>
+                    <li clas s="flex-item"><a class="nav-underline" href="{{ .Site.BaseURL }}/project">Program
+                            Overview</a></li>
+                    <li class="flex-item"><a class="nav-underline" href="{{ .Site.BaseURL }}/project">Upcoming
+                            Courses</a></li>
+                    <li class="flex-item"><a class="nav-underline" href="{{ .Site.BaseURL }}/learn">Admissions</a></li>
+                    <li class="flex-item"><a class="nav-underline" href="/ABHI/templates/about.html">Contact Us</a></li>
+                </ul>
+            </nav>
+
+
+            <!-- mobile menu -->
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a class="mobile-item-top" href="{{ .Site.BaseURL }}/blog">About Us</a>
+                <a class="mobile-item" href="{{ .Site.BaseURL }}/experiment">Program Overview</a>
+                <a class="mobile-item" href="{{ .Site.BaseURL }}/project">Upcoming Courses</a>
+                <a class="mobile-item" href="{{ .Site.BaseURL }}/learn">Admissions</a>
+                <a class="mobile-item" href="{{ .Site.BaseURL }}/about">Contact Us</a>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="flex-container">
+                <div class="flex-item boxed">
+                    <h1>Alberta Business and Health Institute</h1>
+                    <img class="picture" src="../images/abhilogo.png" alt="ABHI">
+                    <h3>ABHI is an educational institution that aims to produce successful graduates by providing them
+                        with quality education that focuses on practical and critical skills</h3>
+
+                </div>
+                <div class="flex-item">
+                    <div class="container">
+                        <video autoplay muted loop>
+                            <source src="../videos/abhiVideo.mp4" type="video/mp4">
+                            Your browser does not support HTML5 video.
+                        </video>
+                        <div class="centered">
+                            <h2>Let the journey begin</h2>
+                            <button class="btn btn-outline-light">Apply now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="flex-container">
+                <div class="flex-container-left-profile boxed">
+                    <div class="flex-item">
+                        <object class="svg" data="../images/undraw_exams_g4ow.svg" type="image/svg+xml"></object>
+                    </div>
+                    <div class="flex-item">
+                        <h2>Small class sizes</h2>
+                        Experience more one-on-one time with experienced instructors and develop closer relationships
+                        with classmates
+                    </div>
+                </div>
+                <div class="flex-container-left-profile boxed">
+                    <div class="flex-item picture">
+                        <object class="svg" data="../images/undraw_time_management_30iu.svg"
+                            type="image/svg+xml"></object>
+                    </div>
+                    <div class="flex-item text">
+                        <h2>Flexible Schedule</h2>
+                        ABHI offers schedules designed to suit the needs of the students. Students will be given the
+                        opportunity and option to take courses full-time, part-time days or evenings or weekends.
+                    </div>
+                </div>
+                <div class="flex-container-left-profile boxed">
+                    <div class="flex-item picture">
+                        <object class="svg" data="../images/undraw_graduation_9x4i.svg" type="image/svg+xml"></object>
+                    </div>
+                    <div class="flex-item text">
+                        <h2>Learn New Skills</h2>
+                        Experience more one-on-one time with experienced instructors and develop closer relationships
+                        with classmates
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="page-footer">
+            <ul class="footer-icon-list">
+                <li><a class="footer-link" href="https://www.instagram.com/bfmxyz/" target="_blank"><i
+                            class="fab fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+                <li><a class="footer-link" href="https://github.com/BryanMartinez95" target="_blank"><i
+                            class="fab fa-github fa-2x" aria-hidden="true"></i></a></li>
+                <li><a class="footer-link" href="https://ca.linkedin.com/in/bmartinez95" target="_blank"><i
+                            class="fab fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
+            </ul>
+        </footer>
+    </div>
+
+    <!-- <script></script> -->
+</body>
+
+</html>
